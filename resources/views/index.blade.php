@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1>Homeeeeeee</h1>
+    <h1>Halaman Home</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
