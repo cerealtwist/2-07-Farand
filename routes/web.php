@@ -16,17 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index',[
         "title" => "Home",
-        "nama" => "02",
-        "email" => "cryptoniac@gmail.com",
-        "image" => "902676.png"
+        "nama" => "Farand",
+        "email" => "fdydat@yahoo.co.id",
+        "image" => "img.jpg"
     ]);
 });
 Route::get('/about', function () {
     return view('about',[
         "title" => "About",
-        "nama" => "02",
-        "email" => "cryptoniac@gmail.com",
-        "image" => "902676.png"
+        "nama" => "Farand",
+        "email" => "fdydat@yahoo.co.id",
+        "image" => "img.jpg"
     ]);
 });
 Route::get('/gallery', function () {
