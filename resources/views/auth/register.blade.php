@@ -27,7 +27,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="{{route('register')}}" method="post">
+                            <form action="{{route('register')}}" method="POST">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input class="au-input au-input--full" type="text" name="username" placeholder="Username">

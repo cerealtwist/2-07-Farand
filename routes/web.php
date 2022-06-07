@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,13 +36,11 @@ Route::get('/gallery', function () {
         "title" => "Gallery"
     ]); 
 });
-
-use App\Http\Controllers\ContactController;
 //  Route::resource('contact',ContactController::class);
 
 Route::get('/contact/create', [ContactController::class, 'create'])->name('contact.create');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
-use Illuminate\Support\Facades\Auth;
+
 Auth::routes();
 
 Route::group(['middleware' =>['auth']], function (){
